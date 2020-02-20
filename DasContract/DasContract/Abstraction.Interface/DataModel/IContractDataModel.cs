@@ -7,6 +7,6 @@ namespace DasContract.Abstraction.Interface.DataModel
 {
     public interface IContractDataModel
     {
-        ICollection<IContractEntity> Entities { get; }
+        IEnumerable<IContractEntity> Entities { get; }
     }
 }

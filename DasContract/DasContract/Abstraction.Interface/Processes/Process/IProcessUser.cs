@@ -9,6 +9,6 @@ namespace DasContract.Abstraction.Interface.Processes.Process
 
         public string Address { get; set; }
 
-        public ICollection<IProcessRole> Roles { get; }
+        public IEnumerable<IProcessRole> Roles { get; }
     }
 }

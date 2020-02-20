@@ -8,8 +8,8 @@ namespace DasContract.Abstraction.Interface.Processes.Process
     public interface IContractProcessElement: INamable, IIdentifiable
     {
 
-        ICollection<string> IncomingIds { get; }
+        IEnumerable<string> IncomingIds { get; }
 
-        ICollection<string> OutgoingIds { get; } 
+        IEnumerable<string> OutgoingIds { get; } 
     }
 }

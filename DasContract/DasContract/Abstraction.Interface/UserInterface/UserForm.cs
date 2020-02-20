@@ -10,6 +10,6 @@ namespace DasContract.Abstraction.Interface.UserInterface
         /// <summary>
         /// Field of this user form
         /// </summary>
-        ICollection<IFormField> Fields { get; }
+        IEnumerable<IFormField> Fields { get; }
     }
 }

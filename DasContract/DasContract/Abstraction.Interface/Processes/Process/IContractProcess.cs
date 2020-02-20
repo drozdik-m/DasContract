@@ -6,8 +6,8 @@ namespace DasContract.Abstraction.Interface.Processes.Process
 {
     public interface IContractProcess
     {
-        ICollection<IContractSequenceFlow> SequenceFlows { get; }
+        IEnumerable<IContractSequenceFlow> SequenceFlows { get; }
 
-        ICollection<IContractSequenceFlow> ProcessElements { get; }
+        IEnumerable<IContractSequenceFlow> ProcessElements { get; }
     }
 }

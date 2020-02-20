@@ -6,8 +6,8 @@ using DasContract.Abstraction.Interface.DataModel.Entity.Property.Primitive;
 
 namespace DasContract.Abstraction.SimpleContract.DataModel.Entity.Property.Primitive
 {
-    public class PrimitiveSimpleContractProperty : IPrimitiveContractProperty
+    public class PrimitiveSimpleContractProperty : SimpleContractProperty, IPrimitiveContractProperty
     {
-
+        public PrimitiveContractPropertyType Type { get; set; }
     }
 }

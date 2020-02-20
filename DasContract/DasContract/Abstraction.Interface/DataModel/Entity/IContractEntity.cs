@@ -9,10 +9,10 @@ namespace DasContract.Abstraction.Interface.DataModel.Entity
 {
     public interface IContractEntity: IIdentifiable, INamable
     {
-        ICollection<IPrimitiveContractProperty> PrimitiveProperties { get; }
+        IEnumerable<IPrimitiveContractProperty> PrimitiveProperties { get; }
 
-        ICollection<IReferenceContractProperty> ReferenceProperties { get; }
+        IEnumerable<IReferenceContractProperty> ReferenceProperties { get; }
 
-        ICollection<ICollectionReferenceContractProperty> CollectionReferenceProperties { get; }
+        IEnumerable<ICollectionReferenceContractProperty> CollectionReferenceProperties { get; }
     }
 }

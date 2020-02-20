@@ -6,6 +6,6 @@ namespace DasContract.Abstraction.Interface.DataModel.Entity.Property.Reference
 {
     public interface ICollectionReferenceContractProperty : IContractProperty
     {
-        ICollection<IContractEntity> Entities { get; }
+        IEnumerable<IContractEntity> Entities { get; }
     }
 }

@@ -8,7 +8,7 @@ namespace DasContract.Abstraction.Interface.UserInterface
     public interface IFormField: IIdentifiable, INamable
     {
         //TODO What is DasContract.Abstraction.UserInterface.FormField.Type (describe the enum at least please)
-        FormFieldType Type { get; }
+        FormFieldType Type { get; set; }
 
         /// <summary>
         /// User friendly label of this field/input

@@ -7,6 +7,6 @@ namespace DasContract.Abstraction.SimpleContract.Processes
 {
     public class SimpleBpmnDiagram : IBpmnDiagram
     {
-
+        public string Diagram { get; set; }
     }
 }

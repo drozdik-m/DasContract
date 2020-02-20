@@ -7,6 +7,6 @@ namespace DasContract.Abstraction.Interface.DataModel.Entity.Property.Primitive
 {
     public interface IPrimitiveContractProperty: IContractProperty
     {
-        PrimitiveContractPropertyType Type { get; }
+        PrimitiveContractPropertyType Type { get; set; }
     }
 }

@@ -51,6 +51,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Abstraction", "Abstraction"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DasContract.Tests.Abstraction", "DasContract\Tests\Abstraction\DasContract.Tests.Abstraction.csproj", "{626F01D1-E9AA-40DC-8A54-6F11FEE80BA6}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DasContract.Abstraction.SimpleContract", "DasContract\Abstraction.SimpleContract\DasContract.Abstraction.SimpleContract.csproj", "{1154EB90-8A58-4012-863E-E197E28CB27C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +99,10 @@ Global
 		{626F01D1-E9AA-40DC-8A54-6F11FEE80BA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{626F01D1-E9AA-40DC-8A54-6F11FEE80BA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{626F01D1-E9AA-40DC-8A54-6F11FEE80BA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1154EB90-8A58-4012-863E-E197E28CB27C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1154EB90-8A58-4012-863E-E197E28CB27C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1154EB90-8A58-4012-863E-E197E28CB27C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1154EB90-8A58-4012-863E-E197E28CB27C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -124,6 +130,7 @@ Global
 		{13237D95-AC3D-4625-8B3E-046E1FAC8172} = {FAE74A5B-C9F6-499C-9D2F-350278AFCCCA}
 		{8321406F-A564-4E8E-A5ED-59C8AAF90256} = {9EBD0287-659E-4EDC-934D-BEA582657888}
 		{626F01D1-E9AA-40DC-8A54-6F11FEE80BA6} = {8321406F-A564-4E8E-A5ED-59C8AAF90256}
+		{1154EB90-8A58-4012-863E-E197E28CB27C} = {00404F8B-1951-49E5-B142-F2A0E5ABE022}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4248E5E5-0FDD-48A5-B4F3-27705D155212}

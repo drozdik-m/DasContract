@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DasContract.Abstraction.Interface.Processes.Tasks
+namespace DasContract.Abstraction.Interface.Processes.Process.Tasks
 {
-    public interface ICustomDataCopyable<TInputType>
+    public interface ICustomDataCopyableTask<TInputType>
     {
         void CopyCustomDataFrom(TInputType source);
     }

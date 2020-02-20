@@ -1,4 +1,5 @@
 ﻿using DasContract.Abstraction.DataModel;
+using DasContract.Abstraction.Interface;
 using DasContract.Abstraction.Processes;
 using DasContract.DasContract.Abstraction.Interface;
 using DasContract.Migrator;

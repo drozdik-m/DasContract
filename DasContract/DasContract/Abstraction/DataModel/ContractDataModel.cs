@@ -10,10 +10,8 @@ using System.Xml.Serialization;
 
 namespace DasContract.Abstraction.DataModel
 {
-    public class ContractDataModel: IIdentifiable, IMigratableComponent<ContractDataModel, IMigrator>
+    public class ContractDataModel: IMigratableComponent<ContractDataModel, IMigrator>
     {
-        public string Id { get; set; }
-
         /// <summary>
         /// Entities of this data model
         /// </summary>

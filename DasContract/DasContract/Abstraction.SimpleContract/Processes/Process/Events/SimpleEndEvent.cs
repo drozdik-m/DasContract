@@ -5,7 +5,7 @@ using DasContract.Abstraction.Interface.Processes.Process.Events;
 
 namespace DasContract.Abstraction.SimpleContract.Processes.Process.Events
 {
-    public class SimpleEndEvent : IEndEvent
+    public class SimpleEndEvent : SimpleEvent, IEndEvent
     {
 
     }

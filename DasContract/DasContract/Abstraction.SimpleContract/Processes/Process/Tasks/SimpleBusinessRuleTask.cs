@@ -2,8 +2,13 @@
 
 namespace DasContract.Abstraction.SimpleContract.Processes.Process.Tasks
 {
-    public class SimpleBusinessRuleTask : IBusinessRuleTask
+    public class SimpleBusinessRuleTask : SimpleTask, IBusinessRuleTask
     {
+        public string BusinessRuleXml { get; set; }
 
+        public void CopyCustomDataFrom(IBusinessRuleTask source)
+        {
+            BusinessRuleXml = source.BusinessRuleXml;
+        }
     }
 }

@@ -2,7 +2,7 @@
 
 namespace DasContract.Abstraction.SimpleContract.Processes.Process.Gateways
 {
-    public class SimpleParallelGateway : IParallelGateway
+    public class SimpleParallelGateway : SimpleGateway, IParallelGateway
     {
 
     }

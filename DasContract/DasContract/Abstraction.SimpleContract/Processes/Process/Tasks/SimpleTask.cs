@@ -2,7 +2,7 @@
 
 namespace DasContract.Abstraction.SimpleContract.Processes.Process.Tasks
 {
-    public class SimpleTask : ITask
+    public class SimpleTask : SimpleContractProcessElement, ITask
     {
 
     }

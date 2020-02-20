@@ -12,7 +12,7 @@ namespace DasContract.Abstraction.Interface.Processes.Process.Tasks
         /// <summary>
         /// A due date to fill this form
         /// </summary>
-        public DateTime DueDate { get; }
+        public DateTime DueDate { get; set; }
 
         /// <summary>
         /// A user who is assigned to perform a task. May be null. 
@@ -22,10 +22,10 @@ namespace DasContract.Abstraction.Interface.Processes.Process.Tasks
         /// <summary>
         /// Process users which are selected to perform this task. 
         /// </summary>
-        public List<IProcessUser> CandidateUsers { get; }
+        public IEnumerable<IProcessUser> CandidateUsers { get; }
         /// <summary>
         /// Process roles allowed to execute this task. 
         /// </summary>
-        public List<IProcessRole> CandidateRoles { get; }
+        public IEnumerable<IProcessRole> CandidateRoles { get; }
     }
 }

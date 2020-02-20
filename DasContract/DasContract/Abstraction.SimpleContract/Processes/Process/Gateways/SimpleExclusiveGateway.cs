@@ -1,6 +1,8 @@
-﻿namespace DasContract.Abstraction.Interface.Processes.Process.Gateways
+﻿using DasContract.Abstraction.Interface.Processes.Process.Gateways;
+
+namespace DasContract.Abstraction.SimpleContract.Processes.Process.Gateways
 {
-    public class SimpleExclusiveGateway : IExclusiveGateway
+    public class SimpleExclusiveGateway : SimpleGateway, IExclusiveGateway
     {
 
     }

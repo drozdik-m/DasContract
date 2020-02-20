@@ -19,5 +19,16 @@ namespace DasContract.Abstraction.SimpleContract.UserInterface
 
         IContractPropertyExpression IFormField.PropertyExpression => PropertyExpression;
         SimpleContractPropertyExpression PropertyExpression { get; set; }
+
+        public void CopyDataFrom(IFormField source)
+        {
+            Id = source.Id;
+            Name = source.Name;
+            Label = source.Label;
+            Description = source.Description;
+            ReadOnly = source.ReadOnly;
+            Type = source.Type;
+            PropertyExpression.CopyDataFrom(source.PropertyExpression);
+        }
     }
 }

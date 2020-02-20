@@ -5,7 +5,7 @@ using DasContract.Abstraction.Interface.UserInterface;
 
 namespace DasContract.Abstraction.Interface.Processes.Process.Tasks
 {
-    public interface IUserTask : ITask, ICustomDataCopyableTask<IUserTask>
+    public interface IUserTask : ITask, IDataCopyable<IUserTask>
     {
         public IUserForm Form { get; }
 

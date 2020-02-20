@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DasContract.Abstraction.Interface.UserInterface
 {
-    public interface IUserForm: IIdentifiable
+    public interface IUserForm: IIdentifiable, IDataCopyable<IUserForm>
     {
         /// <summary>
         /// Field of this user form

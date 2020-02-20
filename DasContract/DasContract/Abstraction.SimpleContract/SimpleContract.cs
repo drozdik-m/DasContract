@@ -19,7 +19,6 @@ namespace DasContract.Abstraction.SimpleContract
         IContractProcesses IContract.Processes => Processes;
         SimpleContractProcesses Processes { get; set; }
 
-        
         IContractDataModel IContract.DataModel => DataModel;
         SimpleContractDataModel DataModel { get; set; }
 

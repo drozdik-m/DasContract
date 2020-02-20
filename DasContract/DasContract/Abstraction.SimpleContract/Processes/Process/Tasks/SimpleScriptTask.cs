@@ -6,7 +6,7 @@ namespace DasContract.Abstraction.SimpleContract.Processes.Process.Tasks
     {
         public string Script { get; set; }
 
-        public void CopyCustomDataFrom(IScriptTask source)
+        public void CopyDataFrom(IScriptTask source)
         {
             Script = source.Script;
         }

@@ -10,5 +10,11 @@ namespace DasContract.Abstraction.SimpleContract.DataModel.Entity.Property
         public string ModelName { get; set; }
 
         public string PropertyName { get; set; }
+
+        public void CopyDataFrom(IContractPropertyExpression source)
+        {
+            ModelName = source.ModelName;
+            PropertyName = source.PropertyName;
+        }
     }
 }

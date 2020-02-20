@@ -1,8 +1,6 @@
-﻿
-
-namespace DasContract.Abstraction.Interface.Processes.Process.Tasks
+﻿namespace DasContract.Abstraction.Interface.Processes.Process.Tasks
 {
-    public interface IScriptTask : ITask, ICustomDataCopyableTask<IScriptTask>
+    public interface IScriptTask : ITask, IDataCopyable<IScriptTask>
     {
         string Script { get; set; }
     }

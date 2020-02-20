@@ -6,7 +6,7 @@ namespace DasContract.Abstraction.SimpleContract.Processes.Process.Tasks
     {
         public string BusinessRuleXml { get; set; }
 
-        public void CopyCustomDataFrom(IBusinessRuleTask source)
+        public void CopyDataFrom(IBusinessRuleTask source)
         {
             BusinessRuleXml = source.BusinessRuleXml;
         }

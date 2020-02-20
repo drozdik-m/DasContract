@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using DasContract.Abstraction.Interface.Processes.Process;
 using DasContract.DasContract.Abstraction.Interface;
 
@@ -15,5 +16,20 @@ namespace DasContract.Abstraction.SimpleContract.Processes.Process
 
         IEnumerable<IProcessRole> IProcessUser.Roles => Roles;
         List<SimpleProcessRole> Roles { get; set; } = new List<SimpleProcessRole>();
+
+        public void CopyDataFrom(IProcessUser source)
+        {
+            Id = source.Id;
+            Name = source.Name;
+            Description = source.Description;
+            Address = source.Address;
+            foreach(var role in Roles)
+            {
+                var res = source.Roles.Where(e => e.Id == role.Id).SingleOrDefault();
+                if (res != null)
+                    role.CopyDataFrom(res);
+
+            }
+        }
     }
 }

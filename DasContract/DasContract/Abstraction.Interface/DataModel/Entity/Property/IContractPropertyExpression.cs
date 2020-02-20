@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DasContract.Abstraction.Interface.DataModel.Entity.Property
 {
-    public interface IContractPropertyExpression
+    public interface IContractPropertyExpression: IDataCopyable<IContractPropertyExpression>
     {
         string ModelName { get; set; }
 

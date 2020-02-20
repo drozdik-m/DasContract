@@ -14,7 +14,7 @@ namespace DasContract.Abstraction.Processes.Tasks
         /// </summary>
         public string DueDateExpression { get; set; }
 
-        /*/// <summary>
+        /// <summary>
         /// A user who is assigned to perform a task. May be null. 
         /// </summary>
         public ProcessUser Assignee { get; set; }
@@ -23,10 +23,11 @@ namespace DasContract.Abstraction.Processes.Tasks
         /// Process users which are selected to perform this task. 
         /// </summary>
         public List<ProcessUser> CandidateUsers { get; set; }
+
         /// <summary>
         /// Process roles allowed to execute this task. 
         /// </summary>
-        public List<ProcessRole> CandidateRoles { get; set; }*/
+        public List<ProcessRole> CandidateRoles { get; set; }
 
         public void CopyCustomDataFrom(UserTask task)
         {

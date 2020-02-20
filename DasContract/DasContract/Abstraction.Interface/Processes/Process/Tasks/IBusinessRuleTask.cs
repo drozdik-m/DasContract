@@ -1,7 +1,6 @@
-﻿
-namespace DasContract.Abstraction.Interface.Processes.Process.Tasks
+﻿namespace DasContract.Abstraction.Interface.Processes.Process.Tasks
 {
-    public interface IBusinessRuleTask : ITask, ICustomDataCopyableTask<IBusinessRuleTask>
+    public interface IBusinessRuleTask : ITask, IDataCopyable<IBusinessRuleTask>
     {
         /// <summary>
         /// A definition of a business rule in xml format. 

@@ -57,6 +57,8 @@ namespace DasContract.Abstraction.Entity
         }
         ContractDataModel dataModel = new ContractDataModel();
 
+        public List<ProcessUser> Users { get; set; }
+
         //--------------------------------------------------
         //                  MIGRATOR
         //--------------------------------------------------

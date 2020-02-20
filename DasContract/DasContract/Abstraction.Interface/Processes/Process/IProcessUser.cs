@@ -3,7 +3,7 @@ using DasContract.DasContract.Abstraction.Interface;
 
 namespace DasContract.Abstraction.Interface.Processes.Process
 {
-    public interface IProcessUser: INamable, IIdentifiable
+    public interface IProcessUser: INamable, IIdentifiable, IDataCopyable<IProcessUser>
     {
         public string Description { get; set; }
 

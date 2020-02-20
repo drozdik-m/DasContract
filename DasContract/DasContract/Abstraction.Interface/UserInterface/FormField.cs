@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 
 namespace DasContract.Abstraction.Interface.UserInterface
 {
-    public interface IFormField: IIdentifiable, INamable
+    public interface IFormField: IIdentifiable, INamable, IDataCopyable<IFormField>
     {
         //TODO What is DasContract.Abstraction.UserInterface.FormField.Type (describe the enum at least please)
         FormFieldType Type { get; set; }
